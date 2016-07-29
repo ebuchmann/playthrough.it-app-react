@@ -1,0 +1,29 @@
+@import 'includes';
+
+.top-nav-wrapper {
+    background: #fff;
+
+    &::before {
+        background: linear-gradient(90deg,#01afee 0,#01afee 25%,#5ad195 0,#5ad195 50%,#fdd900 0,#fdd900 75%,#ee4025 0,#ee4025);
+        height: 4px;
+        content: '';
+        width: 100%;
+        display: block;
+    }
+}
+
+.site-header {
+    padding: 15px 0;
+}
+
+.top-links {
+    float: right;
+    position: relative;
+
+    > .link {
+        padding: 10px;
+        color: $gray-dark;
+        display: inline-block;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,20 @@
+@import '../../node_modules/normalize.css/normalize';
+@import 'includes';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    color: #373a3c;
+    background-color: #f7f7f9;
+    height: 100%;
+}
+
+.playthrough-logo {
+    max-width: 310px;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

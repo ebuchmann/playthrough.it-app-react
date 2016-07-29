@@ -1,0 +1,40 @@
+@import 'includes';
+
+.nav-menu {
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+    &::after {
+        margin-left: 10px;
+        @include font-icon($icon-arrow-down);
+    }
+
+    > .menu {
+        opacity: 0;
+        right: 0;
+        position: absolute;
+        transition: all .2s ease-in;
+        width: 200px;
+        border: 1px solid black;
+        background: #fff;
+        transform: scale(1.05);
+
+        > .link {
+            display: block;
+            padding: 4px 8px;
+            text-decoration: none;
+            transition: all .2s ease-in;
+
+            &:hover {
+                background: $gray-light;
+            }
+        }
+    }
+}
+
+.nav-menu:focus > .menu {
+    opacity: 1;
+    transform: scale(1);
+}

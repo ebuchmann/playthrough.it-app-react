@@ -1,0 +1,28 @@
+@import 'includes';
+
+.site-footer {
+    min-height: 50px;
+    position: relative;
+    margin: 35px 20px;
+
+    &::before {
+        content: '';
+        height: 2px;
+        width: 100%;
+        background-color: #a9a9a9;
+        top: 20px;
+        margin-right: 15px;
+        position: absolute;
+    }
+
+    > .icon {
+        margin: 0 auto;
+        display: block;
+        position: relative;
+    }
+
+    > .copyright {
+        font-size: .7em;
+        font-style: italic;
+    }
+}
